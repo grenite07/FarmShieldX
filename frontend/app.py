@@ -22,7 +22,7 @@ if uploaded_file is not None:
             files = {"file": (uploaded_file.name, uploaded_file.getvalue(), uploaded_file.type)}
             # Send to FastAPI Backend
             try:
-                response = requests.post(f"http://127.0.0.1:8000/analyze?lat={LAT}&lon={LON}", files=files)
+                response = requests.post(f"https://farmshieldx-demo.onrender.com/", files=files)
                 
                 if response.status_code == 200:
                     data = response.json()
