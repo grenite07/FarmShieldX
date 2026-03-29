@@ -1,0 +1,10 @@
+# Environments
+venv/
+.env
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Large Model Weights (Optional: Remove this if your .pth file is under 50MB)
+*.pth
